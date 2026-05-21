@@ -1,0 +1,24 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.2.1",
+    "libphonenumber": "^0.0.9",
+    "libphonenumber-js": "^1.12.37",
+    "pg": "^8.18.0",
+    "react-phone-number-input": "^3.4.14",
+    "react-router-dom": "^7.13.0",
+    "react-slick": "^0.31.0",
+    "slick-carousel": "^1.8.1"
+  }
+}
