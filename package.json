@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test"
   },
   "keywords": [],
   "author": "",
@@ -16,8 +18,11 @@
     "libphonenumber": "^0.0.9",
     "libphonenumber-js": "^1.12.37",
     "pg": "^8.18.0",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
     "react-phone-number-input": "^3.4.14",
     "react-router-dom": "^7.13.0",
+    "react-scripts": "^5.0.1",
     "react-slick": "^0.31.0",
     "slick-carousel": "^1.8.1"
   }
