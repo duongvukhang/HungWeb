@@ -1,0 +1,14 @@
+[build]
+  base    = "KHANG/Main"
+  command = "npm run build"
+  publish = "KHANG/Main/dist"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Content-Type = "application/javascript"
+
+[[redirects]]
+  from = "/*"
+  to   = "/index.html"
+  status = 200
