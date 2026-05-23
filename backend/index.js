@@ -8,6 +8,7 @@ const path = require("path");
 const productsRoutes = require("./routes/Features");
 const authRoutes = require("./routes/auth");
 const newsRoutes = require("./routes/news");
+const contactRoutes = require("./contactForm");
 
 const app = express();
 const PORT = process.env.PORT || 4000;
@@ -42,6 +43,7 @@ app.use('/ProductImage',
 app.use("/api/products", productsRoutes);
 app.use("/api/auth", authRoutes);
 app.use("/api/news", newsRoutes);
+app.use("/api/contact", contactRoutes);
 
 // ── Health check ──────────────────────────────────────────────────────────────
 app.get("/health", (_req, res) => res.json({ status: "ok", timestamp: new Date() }));
