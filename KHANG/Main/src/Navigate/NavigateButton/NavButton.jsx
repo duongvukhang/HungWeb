@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect, useRef, useContext } from "react";
-import { FlyoutContext } from "../../context/contextProvider/flyoutMenu";
+import { FlyoutContext } from "../../context/contextProvider/FlyoutMenu";
 
 export default function NavButton({ label, to, onClick, menu,isScrolled }) {
   const closeTimer = useRef(null);
