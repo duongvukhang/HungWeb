@@ -19,8 +19,21 @@ app.use(helmet({
   contentSecurityPolicy: false,                            // Optional: disable if you have issues with inline styles
 }));
 
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://hungwebdemo.netlify.app",
+  "https://hung-web-294j.vercel.app",
+  process.env.CLIENT_URL,
+].filter(Boolean);
+
 app.use(cors({
-  origin: process.env.CLIENT_URL || "http://localhost:5173",
+  origin: (origin, callback) => {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
   credentials: true,
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"],
