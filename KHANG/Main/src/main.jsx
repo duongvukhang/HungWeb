@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import { RouterProvider } from "react-router-dom";
 import { router } from "./context/router/Router.jsx";
 import { MenuProvider } from "./context/contextProvider/menuContext.jsx";
-import { FlyoutProvider } from "./context/contextProvider/flyoutMenu.jsx";
+import { FlyoutProvider } from "./context/contextProvider/FlyoutMenu.jsx";
 import { AuthProvider } from "./context/AuthContext.jsx";
 
 import "slick-carousel/slick/slick.css";
