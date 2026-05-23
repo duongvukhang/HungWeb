@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import HomePageComponent from "../../Page/HomePage/HomePage.jsx";
-import NotFoundPage from "../../Page/notFoundPage/notFoundPage.jsx";
+import NotFoundPage from "../../Page/NotFoundPage/NotFoundPage.jsx";
 import MainLayout from "../../mainLayout/MainLayout.jsx";
 import Contact from "../../Page/ContactPage/ContactPage.jsx";
 import ProductPage from "../../Page/ProductPage/ProductPage.jsx";
